@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body{
+    background-color:black;
+    overflow: hidden;
+}
+#wrap{
+    width: 113px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(900px) rotateX(-10deg);
+    position: relative;
+    margin: 200px auto;
+}
+#wrap img{
+    position: absolute;
+    top:0;
+    left: 0;
+    -webkit-box-reflect: below 8px -webkit-linear-gradient(top, rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+    box-reflect: below 8px linear-gradient(top, rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+    transform: rotateY(0deg);
+    border-radius: 15px;
+}

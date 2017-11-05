@@ -46,3 +46,8 @@ $(function(){
         },30);
     })
 });
+foo();
+var foo=function(){
+    console.log(n);
+    var n=2;
+}
