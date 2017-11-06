@@ -88,3 +88,32 @@ body{
 #threeD:hover .out_bottom{
     transform: rotateX(-90deg) translateZ(200px);
 }
+
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]+label{
+    position: relative;
+}
+input[type="radio"]+label:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    z-index: 10;
+    
+}
+input[type="radio"]:checked+label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: orange;
+}
